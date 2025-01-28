@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Number.styles.css",
+      "PackagePath": "staticwebassets\\Number.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Number.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Number.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Number.props",
+      "PackagePath": "build\\Number.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Number.props",
+      "PackagePath": "buildMultiTargeting\\Number.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Number.props",
+      "PackagePath": "buildTransitive\\Number.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

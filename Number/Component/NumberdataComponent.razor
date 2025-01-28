@@ -1,0 +1,166 @@
+﻿@inject NumverifyService NumverifyService
+@inject HttpClient Http
+@inject Historybookcs UserDataService
+
+
+
+
+<div class="container mt-5">
+    <h2 class="title">Verify Phone Numbers Instantly</h2>
+    <p class="ensure">Ensure your database is up-to-date with accurate phone numbers by validating them instantly.</p>
+    <div class="hover-card">
+        <div class="col-12 col-md-4 mb-4" style="margin-left: 20%;">
+            <select id="inputState" class="form-select" @bind="UserSelection" required>
+                <option selected>Choose...</option>
+                @foreach (Country country in Countries)
+                {
+                    <option value="@country.DialingCode">
+                        @country.FlagIcon @country.CountryName (@country.DialingCode)
+                    </option>
+                }
+            </select>
+        </div>
+        <div class="col-12 col-md-6 mb-4 " style="margin-left: 1%;">
+            <input type="text" id="phoneNumber" @bind="PhoneNumber" class="form-control" placeholder="Enter phone number" required />
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <button @onclick="GetNumber" class="click">Click here to see</button>
+    </div>
+</div>
+
+
+
+
+
+@if (Numverify is null)
+{
+    <div class="col-12 text-center mt-3">
+        <p class="error-message text-danger">@errorMessage</p>
+    </div>
+}
+else
+{
+    <div class="container1 mt-5">
+        <div class="row shadow-lg p-4 rounded-lg ">
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">Country Code</h6>
+            </div>
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">Number</h6>
+            </div>
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">Location</h6>
+            </div>
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">Carrier</h6>
+            </div>
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">Validation</h6>
+            </div>
+            <div class="col-2 text-center">
+                <h6 class="font-weight-bold text-primary small">User Save</h6>
+            </div>
+        </div>
+
+        <div class="row shadow-sm p-3 rounded-lg bg-light mt-2">
+            <div class="col-2 text-center">
+                <p class="small text-dark">@UserSelection</p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="small text-dark">@Numverify.Number</p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="small text-dark">@Numverify.Location</p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="small text-dark">@Numverify.Carrier</p>
+            </div>
+            <div class="col-2 text-center">
+                @if (Numverify.Valid)
+                {
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" class="text-success">
+                        <path fill="#1fc879" d="M2 4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm7 6a1 1 0 1 0-2 0a1 1 0 0 0 2 0m2 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-5.473 7.025l-1.414-1.414A5.5 5.5 0 0 1 8.003 14c1.518 0 2.894.617 3.888 1.61l-1.414 1.415A3.5 3.5 0 0 0 8.002 16c-.967 0-1.84.39-2.475 1.025m14.68-6.318l-4 4l-.707.707l-.707-.707l-2.5-2.5l1.414-1.414l1.793 1.793l3.293-3.293z" />
+                    </svg>
+                }
+                else
+                {
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" class="text-danger">
+                        <path fill="#f71366" d="M2 4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm7 6a1 1 0 1 0-2 0a1 1 0 0 0 2 0m2 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-5.473 7.025l-1.414-1.414A5.5 5.5 0 0 1 8.003 14c1.518 0 2.894.617 3.888 1.61l-1.414 1.415A3.5 3.5 0 0 0 8.002 16c-.967 0-1.84.39-2.475 1.025m14.68-6.318l-4 4l-.707.707l-.707-.707l-2.5-2.5l1.414-1.414l1.793 1.793l3.293-3.293z" />
+                    </svg>
+                }
+            </div>
+            <div class="col-2 text-center">
+                <svg @onclick="Savedata" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path fill="#68ea60" d="M8 3H6.25A3.25 3.25 0 0 0 3 6.25v15.5a3.25 3.25 0 0 0 3 3.24v-8.74A2.25 2.25 0 0 1 8.25 14h11.5A2.25 2.25 0 0 1 22 16.25v8.74a3.25 3.25 0 0 0 3-3.24V8.786a3.25 3.25 0 0 0-.952-2.299l-2.535-2.535A3.25 3.25 0 0 0 19.214 3H19v5.75A2.25 2.25 0 0 1 16.75 11h-6.5A2.25 2.25 0 0 1 8 8.75zm9.5 0h-8v5.75c0 .414.336.75.75.75h6.5a.75.75 0 0 0 .75-.75zm3 22v-8.75a.75.75 0 0 0-.75-.75H8.25a.75.75 0 0 0-.75.75V25z" />
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+}
+
+@code {
+    private List<Country> Countries = new Country().GetCountryList();
+
+    public string UserSelection;
+
+    public string? PhoneNumber;
+
+    public Numverify? Numverify;
+
+    public string? errorMessage;
+
+
+    private List<Numverify> userDatas = new List<Numverify>();
+
+    public void Savedata()
+    {
+        if(Numverify != null)
+        {
+            var newuserDatas = new Numverify
+                 {
+                    Number = $"{UserSelection.TrimStart('+')}{PhoneNumber}",
+                     Location = Numverify.Location ?? "N/A",
+                     Carrier = Numverify.Carrier,
+                    Valid = Numverify.Valid
+                 };
+            UserDataService.Adduserdata(newuserDatas);
+            UserSelection = string.Empty;
+            PhoneNumber = string.Empty;
+
+        }
+    }
+
+    public async Task GetNumber()
+    {
+        
+        if (string.IsNullOrWhiteSpace(PhoneNumber))
+        {
+            errorMessage = "Please enter a valid phone number.";
+            return;
+        }
+
+        string fullnumber = $"{UserSelection.TrimStart('+')}{PhoneNumber}";
+
+
+        string apiKey = NumverifyService.GetApiKey();
+        string url = $"https://apilayer.net/api/validate?access_key={apiKey}&number={fullnumber}&country_code=&format=1";
+
+        try
+        {
+            Numverify = await Http.GetFromJsonAsync<Numverify>(url);
+
+            if (Numverify == null || !Numverify.Valid)
+            {
+                errorMessage = "Invalid phone number or error in response.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+    }
+}

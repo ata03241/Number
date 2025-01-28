@@ -1,0 +1,10 @@
+wwwroot\appsettings.json
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.ico
+wwwroot\favicon-16x16.png
+wwwroot\favicon-32x32.png
+wwwroot\icon-192.png
+wwwroot\index.html
+wwwroot\sample-data\weather.json
