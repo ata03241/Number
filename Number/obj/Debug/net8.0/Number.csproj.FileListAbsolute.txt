@@ -1034,6 +1034,7 @@ C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\refint\Number.dll
 C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\Number.pdb
 C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\ref\Number.dll
 C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\f8wjum6pi6-rolj10sstb.gz
-C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\02jlxwbc9b-81kg8a38g2.gz
-C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\8pfjo6cukw-o1xg6hx6tq.gz
+C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\Number.sourcelink.json
+C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\f8wjum6pi6-iv3hmdpjot.gz
+C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\02jlxwbc9b-ipq3njsvc7.gz
+C:\Users\pakhr\source\repos\Number\Number\obj\Debug\net8.0\compressed\8pfjo6cukw-5g1yx2jke9.gz

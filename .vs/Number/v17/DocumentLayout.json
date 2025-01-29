@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pakhr\\source\\repos\\Number\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\numberdatacomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\numberdatacomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\models\\exchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\models\\exchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +26,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Number\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Number\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T08:45:51.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "NumberdataComponent.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\NumberdataComponent.razor",
               "RelativeDocumentMoniker": "Number\\Component\\NumberdataComponent.razor",
               "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\NumberdataComponent.razor",
               "RelativeToolTip": "Number\\Component\\NumberdataComponent.razor",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAJUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-28T11:14:17.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ExchnageChildComponent.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\ExchnageChildComponent.razor",
               "RelativeDocumentMoniker": "Number\\Component\\ExchnageChildComponent.razor",
               "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\ExchnageChildComponent.razor",
               "RelativeToolTip": "Number\\Component\\ExchnageChildComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-28T11:09:50.758Z",
               "EditorCaption": ""
@@ -53,14 +70,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Exchange.cs",
-              "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Models\\Exchange.cs",
-              "RelativeDocumentMoniker": "Number\\Models\\Exchange.cs",
-              "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Models\\Exchange.cs",
-              "RelativeToolTip": "Number\\Models\\Exchange.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T09:31:40.527Z",
+              "Title": "ExchangeComponent.razor",
+              "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Pages\\ExchangeComponent.razor",
+              "RelativeDocumentMoniker": "Number\\Pages\\ExchangeComponent.razor",
+              "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Pages\\ExchangeComponent.razor",
+              "RelativeToolTip": "Number\\Pages\\ExchangeComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T08:44:37.589Z",
               "EditorCaption": ""
             }
           ]

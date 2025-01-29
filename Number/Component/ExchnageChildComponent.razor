@@ -3,12 +3,74 @@
 
 <h3>ExchnageChildComponent</h3>
 
+<input @bind="UserSelection"/>
+<input @bind="Symbols"/>
+<button @onclick="GetExchnagerate" class="click">Click here to see</button>
+
+@if (Exchange == null)
+{
+    <div class="col-12 text-center mt-3">
+        <p class="error-message text-danger">@errormessages</p>
+    </div>
+}
+else
+{
+    <p>@Exchange.Success</p>
+    <p>@Exchange.Timestamp</p>
+    <p>@Exchange.Base</p>
+    <p>@Exchange.DateTime</p>   
+    <p>SEK: @Exchange.Rates.SEK</p>
+    <p>AUD: @Exchange.Rates.AUD</p>
+    <p>CAD: @Exchange.Rates.CAD</p>
+    <p>GBP: @Exchange.Rates.GBP</p>
+    <p>CHF: @Exchange.Rates.CHF</p>
+    <p>EUR: @Exchange.Rates.EUR</p>
+    <p>USD: @Exchange.Rates.USD</p>
+    <p>INR: @Exchange.Rates.INR</p>
+    <p>IDR: @Exchange.Rates.IDR</p>
+    <p>DKK: @Exchange.Rates.DKK</p>
+    <p>NOK: @Exchange.Rates.NOK</p>
+    <p>MXN: @Exchange.Rates.MXN</p>
+    <p>AED: @Exchange.Rates.AED</p>
+
+
+}
+
 @code {
     public Exchange? Exchange;
     public string? UserSelection;
     public string? Symbols;
     public string? errormessages;
 
+    public async void GetExchnagerate()
+    {
+        if (string.IsNullOrWhiteSpace(UserSelection))
+        {
+            errormessages = "Please enter the valid base";
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(Symbols))
+        {
+            errormessages = "Please enter the valid Symbols";
+            return;
+        }
 
+        string apiKey = Exchangeserive.GetApiKey();
+        string url = $"https://api.exchangeratesapi.io/v1/latest?access_key={apiKey}&base={UserSelection}&symbols={Symbols}";
+
+        try
+        {
+            Exchange = await http.GetFromJsonAsync<Exchange>(url);
+
+            if(Exchange == null)
+            {
+                errormessages = "Invalid exchnage data";
+            }
+        }
+        catch(Exception ex)
+        {
+            errormessages = $"Error: {ex.Message}";
+        }
+    }
 
 }
