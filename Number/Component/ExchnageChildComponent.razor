@@ -1,10 +1,11 @@
 ﻿@inject Exchangeservice Exchangeserive
 @inject HttpClient http
 
-<h3>ExchnageChildComponent</h3>
+<h3>ExchangeChildComponent</h3>
 
-<input @bind="UserSelection"/>
-<input @bind="Symbols"/>
+<input @bind="UserSelection" placeholder="Enter base currency"/>
+<input @bind="Symbols" placeholder="Enter symbol(s), e.g., USD, GBP" />
+
 <button @onclick="GetExchnagerate" class="click">Click here to see</button>
 
 @if (Exchange == null)
@@ -15,43 +16,66 @@
 }
 else
 {
-    <p>@Exchange.Success</p>
-    <p>@Exchange.Timestamp</p>
-    <p>@Exchange.Base</p>
-    <p>@Exchange.DateTime</p>   
-    <p>SEK: @Exchange.Rates.SEK</p>
-    <p>AUD: @Exchange.Rates.AUD</p>
-    <p>CAD: @Exchange.Rates.CAD</p>
-    <p>GBP: @Exchange.Rates.GBP</p>
-    <p>CHF: @Exchange.Rates.CHF</p>
-    <p>EUR: @Exchange.Rates.EUR</p>
-    <p>USD: @Exchange.Rates.USD</p>
-    <p>INR: @Exchange.Rates.INR</p>
-    <p>IDR: @Exchange.Rates.IDR</p>
-    <p>DKK: @Exchange.Rates.DKK</p>
-    <p>NOK: @Exchange.Rates.NOK</p>
-    <p>MXN: @Exchange.Rates.MXN</p>
-    <p>AED: @Exchange.Rates.AED</p>
+    <div class="card p-3 mb-3 shadow-sm">
+        <p><strong>Status:</strong> @Exchange.Success</p>
+        <p><strong>Timestamp:</strong> @Exchange.Timestamp</p>
+        <p><strong>Base Currency:</strong> @Exchange.Base</p>
+        <p><strong>Date:</strong> @Exchange.DateTime</p>
+    </div>
 
+    @if (!string.IsNullOrEmpty(Symbols))
+    {
+        var symbolList = Symbols.Split(',').Select(s => s.Trim()).ToList();
 
+        <div class="row">
+            @foreach (var symbol in symbolList)
+            {
+                var rate = Exchange.Rates.GetType().GetProperty(symbol.ToUpper())?.GetValue(Exchange.Rates);
+                if (rate != null)
+                {
+                    <div class="col-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card p-3 text-center border">
+                            <p><strong>@symbol.ToUpper(): </strong>@rate</p>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    }
+    else
+    {
+        <p>SEK: @Exchange.Rates.SEK</p>
+        <p>AUD: @Exchange.Rates.AUD</p>
+        <p>CAD: @Exchange.Rates.CAD</p>
+        <p>GBP: @Exchange.Rates.GBP</p>
+        <p>CHF: @Exchange.Rates.CHF</p>
+        <p>EUR: @Exchange.Rates.EUR</p>
+        <p>USD: @Exchange.Rates.USD</p>
+        <p>INR: @Exchange.Rates.INR</p>
+        <p>IDR: @Exchange.Rates.IDR</p>
+        <p>DKK: @Exchange.Rates.DKK</p>
+        <p>NOK: @Exchange.Rates.NOK</p>
+        <p>MXN: @Exchange.Rates.MXN</p>
+        <p>AED: @Exchange.Rates.AED</p>
+    }
 }
 
 @code {
     public Exchange? Exchange;
-    public string? UserSelection;
+    public string? UserSelection = "EUR";
     public string? Symbols;
     public string? errormessages;
 
-    public async void GetExchnagerate()
+    public async Task GetExchnagerate()
     {
         if (string.IsNullOrWhiteSpace(UserSelection))
         {
-            errormessages = "Please enter the valid base";
+            errormessages = "Please enter a valid base currency.";
             return;
         }
         if (string.IsNullOrWhiteSpace(Symbols))
         {
-            errormessages = "Please enter the valid Symbols";
+            errormessages = "Please enter valid Symbols (e.g., USD, GBP).";
             return;
         }
 
@@ -64,7 +88,7 @@ else
 
             if(Exchange == null)
             {
-                errormessages = "Invalid exchnage data";
+                errormessages = "Invalid exchange data.";
             }
         }
         catch(Exception ex)
@@ -72,5 +96,4 @@ else
             errormessages = $"Error: {ex.Message}";
         }
     }
-
 }
