@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pakhr\\source\\repos\\Number\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\numberdatacomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\numberdatacomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\component\\exchnagechildcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|c:\\users\\pakhr\\source\\repos\\number\\number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78756786-0FC1-4749-962E-A8E0FBBC5C78}|Number\\Number.csproj|solutionrelative:number\\pages\\exchangecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Number\\Layout\\MainLayout.razor",
@@ -43,33 +47,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "NumberdataComponent.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\NumberdataComponent.razor",
               "RelativeDocumentMoniker": "Number\\Component\\NumberdataComponent.razor",
               "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\NumberdataComponent.razor",
               "RelativeToolTip": "Number\\Component\\NumberdataComponent.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAJUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-28T11:14:17.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T11:14:17.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ExchnageChildComponent.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\ExchnageChildComponent.razor",
               "RelativeDocumentMoniker": "Number\\Component\\ExchnageChildComponent.razor",
-              "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\ExchnageChildComponent.razor*",
-              "RelativeToolTip": "Number\\Component\\ExchnageChildComponent.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Component\\ExchnageChildComponent.razor",
+              "RelativeToolTip": "Number\\Component\\ExchnageChildComponent.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-28T11:09:50.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T11:09:50.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ExchangeComponent.razor",
               "DocumentMoniker": "C:\\Users\\pakhr\\source\\repos\\Number\\Number\\Pages\\ExchangeComponent.razor",
               "RelativeDocumentMoniker": "Number\\Pages\\ExchangeComponent.razor",
@@ -77,8 +79,7 @@
               "RelativeToolTip": "Number\\Pages\\ExchangeComponent.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-29T08:44:37.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T08:44:37.589Z"
             }
           ]
         }
